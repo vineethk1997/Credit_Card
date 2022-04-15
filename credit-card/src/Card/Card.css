@@ -12,9 +12,10 @@ input::-webkit-inner-spin-button {
 
 
 input{
-    border: 1rem solid red;
+    border: 2px solid red;
     width: 4rem;
     height: 4rem;
+    margin-left: 5px;
 }
 .text{
     color: rgb(15, 120, 123);
@@ -28,17 +29,36 @@ input{
     align-items: center;
     height: 10rem;
     width:30rem;
+    margin:10% auto;
 }
 button{
   letter-spacing: 0.1em;
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
-  line-height: 45px;
-  max-width: 160px;
+  line-height: 30px;
+  border: 2px solid black;
+  margin-top: 10px;
+  max-width: 140px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   background-color: aqua;
+}
+@media  only screen and (min-width:360px) and (max-width:740px) {
+  .card-container{
+    display: block;
+    height: 400px;
+    width: 700px;
+    border: 2px solid black;
+  }
+  input{
+    
+    height: 80px;
+    width: 60px;
+    left: 50px;
+    margin: 5px;
+  }
+  
 }
